@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <div>
+        <h2>
+            Tienda Online NM
+        </h2>
+        
+        <div>
+            <h3>
+                Grabadora de Audio
+            </h3>
+            <p>
+                Precio: $<span>25</span>
+            </p>
+            <button 
+            onclick="agregarAlCarrito('Laptop Gaming', 25)">Agregar al carrito de compra
+            </button>
+        </div>
+        
+        <div>
+            <h3>
+                Mouse Ergonomico
+            </h3>
+            <p>
+                Precio: $<span>15</span>
+            </p>
+            <button 
+            onclick="agregarAlCarrito('Mouse Inalámbrico', 15)">Agregar al carrito de compra
+            </button>
+        </div>
+        
+        <div>
+            <h3>
+                Monitor 8"
+            </h3>
+            <p>
+                Precio: $<span>20</span>
+            </p>
+            <button 
+            onclick="agregarAlCarrito('Teclado Mecánico', 20)">Agregar al carrito de compra
+            </button>
+        </div>
+        
+        <hr>
+        
+        <div>
+            <h3>
+                Mi Carrito
+            </h3>
+            <p>
+                Items totales: <span id="contador-items">0</span>
+            </p>
+
+            <p>
+                Total a pagar: $<span id="total-precio">0</span>
+            </p>
+
+            <button 
+            onclick="vaciarCarrito()">Vaciar el carrito de compras
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
