@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Encuesta de Intereses
+    </title>
+</head>
+<body>
+    <div>
+        <h2>
+            Encuesta de Intereses
+        </h2>
+        <p>
+            ¿Qué tema te interesa más?
+        </p>
+        
+        <div>
+            <h3>
+                Desarrollo de Videojuegos
+            </h3>
+            <button onclick="darVoto('videojuegos')">
+                Votar
+            </button>
+            <p>
+                Votos: <span id="votos-videojuegos">0</span>
+            </p>
+        </div>
+        
+        <div>
+            <h3>
+            Ciberseguridad
+            </h3>
+            <button onclick="darVoto('ciberseguridad')">
+            Votar
+            </button>
+            <p>
+            Votos: <span id="votos-ciberseguridad">0</span>
+            </p>
+        </div>
+        
+        <div>
+            <h3>
+                Inteligencia Artificial
+            </h3>
+            <button 
+            onclick="darVoto('ia')">Votar
+            </button>
+            <p>
+            Votos: <span id="votos-ia">0</span>
+            </p>
+        </div>
+        
+        <div>
+            <h3>
+            Total de Votos: <span id="total-votos">0</span>
+            </h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
